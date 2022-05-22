@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/08/23 09:22:59.000.710,=C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/23 09:51:46.000.256,C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\CheckList.dproj</Transaction>
+    <Transaction>2020/08/23 10:41:00.000.740,C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\CheckList\Unit1.pas</Transaction>
+    <Transaction>2020/08/23 10:41:00.000.740,C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\CheckList\Unit1.fmx</Transaction>
+    <Transaction>2020/08/23 10:41:03.000.809,C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\CheckList.dproj=C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\CheckList\CheckList.dproj</Transaction>
+    <Transaction>2020/11/05 12:13:34.000.493,C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\CheckList\CheckList.dproj=C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\CheckList V2\CheckList.dproj</Transaction>
+    <Transaction>2020/11/05 12:17:31.000.133,C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\CheckList\Unit1.pas=C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\CheckList V2\Unit1.pas</Transaction>
+    <Transaction>2020/11/05 12:17:31.000.133,C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\CheckList\Unit1.fmx=C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\CheckList V2\Unit1.fmx</Transaction>
+    <Transaction>2020/12/03 20:53:57.000.328,=C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\Frases Prontas - Copia\UnitPrincipal.pas</Transaction>
+    <Transaction>2020/12/03 21:08:44.000.617,C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\Frases Prontas - Copia\UnitPrincipal.pas=</Transaction>
+    <Transaction>2020/12/03 21:10:48.000.466,=C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\Frases Prontas - Copia\UnitPrincipal.pas</Transaction>
+    <Transaction>2020/12/03 21:14:36.000.429,C:\Users\Upar.DESKTOP-MAPDODP\Documents\Embarcadero\Studio\Projects\Frases Prontas - Copia\UnitPrincipal.pas=</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PVrauu iOSSimulator="iPhone5"/>
+		<PiOS iOSSimulator="iPhone5"/>
+		<NoProfile Android64="" iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

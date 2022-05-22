@@ -1,0 +1,1020 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize, biHelp]
+  BorderStyle = Single
+  Caption = 'Check-list'
+  ClientHeight = 499
+  ClientWidth = 294
+  FormStyle = StayOnTop
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Geralzao: TRectangle
+    Fill.Kind = None
+    HitTest = False
+    Size.Width = 296.000000000000000000
+    Size.Height = 505.000000000000000000
+    Size.PlatformDefault = False
+    object Label8: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 7.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 297.000000000000000000
+      Size.Width = 286.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      Text = 'Coment'#225'rio final:'
+      TabOrder = 8
+    end
+    object EditNome: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Hint = 'Nome do cliente'
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Size.Width = 286.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Nome do cliente'
+      ParentShowHint = False
+      ShowHint = True
+      OnChange = EditNomeChange
+    end
+    object EditTelefone: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 2
+      Position.X = 5.000000000000000000
+      Position.Y = 32.000000000000000000
+      Hint = 'Contato'
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 150.000000000000000000
+      Size.Width = 141.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Contato - Ex.: Whats 99999-9999'
+      ParentShowHint = False
+      ShowHint = True
+      OnChange = EditNomeChange
+    end
+    object EditAtendimentos: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 1
+      FilterChar = '1234567890'
+      Position.X = 150.000000000000000000
+      Position.Y = 32.000000000000000000
+      Hint = 'Quantidade de atendimentos t'#233'cnicos nos '#250'ltimos 30 dias'
+      Margins.Left = 150.000000000000000000
+      Margins.Top = -22.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Size.Width = 141.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Aten. anteriores 30 dias'
+      ParentShowHint = False
+      ShowHint = True
+      OnChange = EditNomeChange
+    end
+    object TabControl1: TTabControl
+      Align = Top
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 119.000000000000000000
+      Size.Width = 286.000000000000000000
+      Size.Height = 171.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'TabControl1Style1'
+      TabIndex = 0
+      TabOrder = 3
+      TabPosition = Top
+      Sizes = (
+        286s
+        145s
+        286s
+        145s)
+      object Radio: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 51.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Radio'
+        ExplicitSize.cx = 51.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object EditRadioSinal: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = []
+          TabOrder = 0
+          Position.X = 8.734691619873047000
+          Position.Y = 13.335662841796880000
+          Hint = 'Sinal'
+          Size.Width = 73.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Sinal'
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object EditRadioCCQ: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = []
+          TabOrder = 1
+          Position.X = 98.122467041015630000
+          Position.Y = 13.335662841796880000
+          Hint = 'CCQ'
+          Size.Width = 81.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'CCQ'
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object EditRadioAirQuality: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = []
+          TabOrder = 2
+          Position.X = 196.374145507812500000
+          Position.Y = 13.335662841796880000
+          Hint = 'Air Quality'
+          Size.Width = 81.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Air Quality'
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object CheckBoxRadioIP: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 9.265304565429688000
+          Position.Y = 82.265731811523440000
+          Size.Width = 177.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Text = 'Configura'#231#227'o de IP Lan'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+        object EditRadioAtualizacao: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = []
+          TabOrder = 3
+          Position.X = 8.734691619873047000
+          Position.Y = 46.797203063964840000
+          Hint = 'Atualiza'#231#227'o'
+          Size.Width = 73.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Atualiza'#231#227'o'
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object EditRadioUptime: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = []
+          TabOrder = 4
+          Position.X = 98.122467041015630000
+          Position.Y = 46.797203063964840000
+          Hint = 'Uptime'
+          Size.Width = 81.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Uptime'
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object EditRadioLan0: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = []
+          TabOrder = 5
+          Position.X = 196.374145507812500000
+          Position.Y = 46.797203063964840000
+          Hint = 'Lan0'
+          Size.Width = 81.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Lan0'
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object CheckBoxRadioRoteador: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 188.482971191406300000
+          Position.Y = 82.265731811523440000
+          Size.Width = 89.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          Text = 'Roteador'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+        object CheckBoxRadioOutrosAparelhos: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 8.176879882812500000
+          Position.Y = 114.713287353515600000
+          Size.Width = 257.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 9
+          Text = 'Outros aparelhos na rede'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+        object CheckBoxRadioNTP: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 188.919250488281300000
+          Position.Y = 114.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = 'NTP'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+      end
+      object Fibra: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 47.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Fibra'
+        ExplicitSize.cx = 47.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object EditFibraSinal: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = []
+          TabOrder = 0
+          Position.X = 8.707481384277344000
+          Position.Y = 10.293704986572270000
+          Hint = 'Sinal'
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Sinal'
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object CheckBoxFibraDHCP: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 8.625850677490234000
+          Position.Y = 68.069931030273440000
+          Size.Width = 81.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'DHCP'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+        object EditFibraModelo: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = []
+          TabOrder = 1
+          Position.X = 96.000000000000000000
+          Position.Y = 10.293704986572270000
+          Hint = 'Modelo'
+          Size.Width = 94.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Modelo'
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object EditFibraTemperatura: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = []
+          TabOrder = 3
+          Position.X = 200.346923828125000000
+          Position.Y = 10.000000000000000000
+          Hint = 'Temperatura'
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = #176'C'
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object CheckBoxFibraLAN: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 98.340133666992190000
+          Position.Y = 68.069931030273440000
+          Size.Width = 65.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = 'LAN'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+        object CheckBoxFibraUPNP: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 185.891159057617200000
+          Position.Y = 68.069931030273440000
+          Size.Width = 65.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Text = 'UPNP'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+        object CheckBoxFibraDDOS: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 8.843536376953125000
+          Position.Y = 92.405593872070310000
+          Size.Width = 65.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 9
+          Text = 'DDOS'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+        object CheckBoxFibraFirewall: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 98.000000000000000000
+          Position.Y = 92.405593872070310000
+          Size.Width = 90.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 10
+          Text = 'Firewall'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+        object CheckBoxFibraNTP: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 185.782318115234400000
+          Position.Y = 92.405593872070310000
+          Size.Width = 73.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 11
+          Text = 'NTP'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+        object CheckBoxFibraIPv6: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 8.734691619873047000
+          Position.Y = 118.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          Text = 'SLAAC'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+        object EditFibraAtualizacao: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = []
+          TabOrder = 2
+          Position.X = 8.707481384277344000
+          Position.Y = 39.000000000000000000
+          Hint = 'Vers'#227'o de atual do firmware'
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Atualiza'#231#227'o'
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object LabelRoteador: TLabel
+          AutoSize = True
+          StyledSettings = [Style, FontColor]
+          Position.X = 99.000000000000000000
+          Position.Y = 42.000000000000000000
+          Size.Width = 86.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+          Text = 'IP Roteador:'
+          TabOrder = 12
+        end
+        object ComboBoxFibraRoteador: TComboBox
+          Items.Strings = (
+            'N/A'
+            'Nos padr'#245'es'
+            'Desconfigurado')
+          Position.X = 184.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 13
+        end
+        object CheckBoxFibraDNSIPv6: TCheckBox
+          Anchors = []
+          StyledSettings = [Style, FontColor]
+          Position.X = 97.836761474609380000
+          Position.Y = 118.000000000000000000
+          Size.Width = 109.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = 'DNS IPv6'
+          TextSettings.Font.Family = 'Arial'
+          TextSettings.Font.Size = 14.000000000000000000
+        end
+        object CheckBox1: TCheckBox
+          Position.X = 160.000000000000000000
+          Position.Y = -32.000000000000000000
+          TabOrder = 14
+          Text = 'CheckBox1'
+        end
+      end
+    end
+    object ComboBoxObservacoes: TComboBox
+      Align = Top
+      Items.Strings = (
+        'Sim'
+        'N'#227'o')
+      Margins.Left = 150.000000000000000000
+      Margins.Top = -15.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 150.000000000000000000
+      Position.Y = 63.000000000000000000
+      Size.Width = 141.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+    end
+    object Label1: TLabel
+      Align = Top
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 7.000000000000000000
+      Margins.Right = 150.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 61.000000000000000000
+      Size.Width = 141.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Observa'#231#245'es importantes:'
+      TabOrder = 6
+    end
+    object Button1: TButton
+      Align = Top
+      Margins.Left = 120.000000000000000000
+      Margins.Top = -20.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 301.000000000000000000
+      Size.Width = 171.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'Gerar Relat'#243'rio'
+      OnClick = ButtonRadioRelatorioClick
+    end
+    object MemoFibraComentario: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      TextSettings.WordWrap = True
+      Align = Top
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 328.000000000000000000
+      Size.Width = 286.000000000000000000
+      Size.Height = 166.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Viewport.Width = 282.000000000000000000
+      Viewport.Height = 162.000000000000000000
+    end
+    object CheckBoxContato: TCheckBox
+      Align = Top
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 90.000000000000000000
+      Size.Width = 286.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+      Text = 'Contato Atualizado'
+    end
+  end
+  object Rectangle1: TRectangle
+    Fill.Kind = None
+    HitTest = False
+    Margins.Left = 5.000000000000000000
+    Position.X = 296.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 497.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object RadioButton1: TRadioButton
+      Align = Top
+      IsChecked = True
+      Margins.Top = 10.000000000000000000
+      Position.Y = 37.000000000000000000
+      Size.Width = 305.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Inicializa'#231#227'o'
+      OnChange = RadioButton1Change
+    end
+    object RadioButton2: TRadioButton
+      Align = Top
+      Position.Y = 56.000000000000000000
+      Size.Width = 305.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Finaliza'#231#227'o'
+      OnChange = RadioButton1Change
+    end
+    object RadioButton3: TRadioButton
+      Align = Top
+      Position.Y = 75.000000000000000000
+      Size.Width = 305.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Detalhamento'
+      OnChange = RadioButton1Change
+    end
+    object RadioButton4: TRadioButton
+      Align = Top
+      Position.Y = 94.000000000000000000
+      Size.Width = 305.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Encerramento MK'
+      OnChange = RadioButton1Change
+    end
+    object PanelRodape: TRectangle
+      Align = Top
+      Fill.Kind = None
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 123.000000000000000000
+      Sides = []
+      Size.Width = 295.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      object Button3: TButton
+        Align = Right
+        Position.X = 215.000000000000000000
+        Position.Y = 22.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Cadastrar'
+        OnClick = Button3Click
+      end
+      object Edit3: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        Hint = 'Nova frase'
+        HelpType = htKeyword
+        Size.Width = 295.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Nova frase'
+        ParentShowHint = False
+        ShowHint = True
+        OnKeyUp = Edit3KeyUp
+        OnClick = Edit3Click
+      end
+      object Button2: TButton
+        Align = Right
+        Margins.Left = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Position.X = 181.000000000000000000
+        Position.Y = 22.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = ':D'
+        OnClick = Button2Click
+      end
+    end
+    object VertScrollBox1: TVertScrollBox
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 295.000000000000000000
+      Size.Height = 276.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Viewport.Width = 295.000000000000000000
+      Viewport.Height = 276.000000000000000000
+    end
+    object Rectangle3: TRectangle
+      Align = Bottom
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 463.000000000000000000
+      Size.Width = 295.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      object Button4: TButton
+        Align = Right
+        Position.X = 263.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = #10004
+        OnClick = Button4Click
+      end
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 1
+        Hint = 'Frase em edi'#231#227'o'
+        Size.Width = 263.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Clique sobre uma frase para edit'#225'-la aqui'
+        ParentShowHint = False
+        ShowHint = True
+        OnKeyUp = Edit1KeyUp
+      end
+    end
+    object Rectangle2: TRectangle
+      Align = Top
+      Fill.Kind = None
+      Position.Y = 150.000000000000000000
+      Sides = []
+      Size.Width = 305.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      object Text2: TText
+        Align = Left
+        Position.X = 259.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56390
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text3: TText
+        Align = Left
+        Position.X = 185.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56392
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text4: TText
+        Align = Left
+        Position.X = 148.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56393
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text5: TText
+        Align = Left
+        Position.X = 111.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56395
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text6: TText
+        Align = Left
+        Position.X = 74.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55358#56605
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text7: TText
+        Align = Left
+        Position.X = 37.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56397
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text8: TText
+        Align = Left
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56878
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text1: TText
+        Align = Left
+        Position.X = 222.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56391
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+    end
+    object Rectangle4: TRectangle
+      Align = Top
+      Fill.Kind = None
+      Position.Y = 150.000000000000000000
+      Sides = []
+      Size.Width = 305.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      object Text9: TText
+        Align = Left
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56832
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text10: TText
+        Align = Left
+        Position.X = 259.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56853
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text11: TText
+        Align = Left
+        Position.X = 222.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56838
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text12: TText
+        Align = Left
+        Position.X = 185.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56837
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text13: TText
+        Align = Left
+        Position.X = 148.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56836
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text14: TText
+        Align = Left
+        Position.X = 111.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56835
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text15: TText
+        Align = Left
+        Position.X = 74.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56834
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+      object Text16: TText
+        Align = Left
+        Position.X = 37.000000000000000000
+        Size.Width = 37.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = #55357#56833
+        TextSettings.Font.Size = 16.000000000000000000
+        OnClick = Text1Click
+      end
+    end
+    object EditAtendente: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 6
+      Text = 'Gabriel'
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Hint = 'Seu nome'
+      HelpType = htKeyword
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Size.Width = 295.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Atentende'
+      ParentShowHint = False
+      ShowHint = True
+      OnChange = EditAtendenteChange
+      object Genero: TButton
+        Align = Right
+        Position.X = 246.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = #55357#56424
+        OnClick = GeneroClick
+      end
+    end
+  end
+  object Copiar_Base: TButton
+    Position.X = 104.000000000000000000
+    Position.Y = 232.000000000000000000
+    TabOrder = 3
+    Text = 'a'
+    Visible = False
+    OnClick = Copiar_BaseClick
+  end
+  object Excluir_Base: TButton
+    Position.X = 112.000000000000000000
+    Position.Y = 240.000000000000000000
+    TabOrder = 5
+    Text = 'Excluir_Base'
+    Visible = False
+    OnClick = Excluir_BaseClick
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      #55357#56832
+      #55357#56833
+      #55357#56834
+      #55357#56835
+      #55357#56836
+      #55357#56837
+      #55357#56838
+      #55357#56853
+      #55357#56869
+      #55357#56878
+      #55357#56397
+      #55358#56605
+      #55357#56395
+      #55357#56393
+      #55357#56392
+      #55357#56391
+      #55357#56390)
+    Position.X = 120.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 13
+    Visible = False
+    Viewport.Width = 50.000000000000000000
+    Viewport.Height = 50.000000000000000000
+  end
+  object Memo2: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      ':grinning:'
+      ':grin:'
+      ':joy:'
+      ':smiley:'
+      ':smile:'
+      ':sweat_smile:'
+      ':laughing:'
+      ':confused:'
+      ':disappointed_relieved:'
+      ':open_mouth:'
+      ':thumbsup:'
+      ':handshake:'
+      ':wave:'
+      ':point_right:'
+      ':point_left:'
+      ':point_down:'
+      ':point_up_2: ')
+    Position.X = 176.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 12
+    Visible = False
+    Viewport.Width = 50.000000000000000000
+    Viewport.Height = 50.000000000000000000
+  end
+  object ColorAnimation1: TColorAnimation
+    Duration = 0.200000002980232200
+    StartValue = claWhite
+    StopValue = claWhite
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 4
+    OnTimer = Timer1Timer
+    Left = 328
+    Top = 144
+  end
+  object Line1: TLine
+    LineType = Bottom
+    Position.X = 296.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 2.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claGray
+  end
+  object Button5: TButton
+    Position.X = 250.000000000000000000
+    Position.Y = 90.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    Text = '>'
+    OnClick = Button5Click
+  end
+  object Label2: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 24.000000000000000000
+    Text = 'Label2'
+    Visible = False
+    TabOrder = 17
+    OnClick = Label2Click
+  end
+  object Subir_Base: TButton
+    Position.X = 120.000000000000000000
+    Position.Y = 248.000000000000000000
+    TabOrder = 2
+    Text = 'a'
+    Visible = False
+    OnClick = Subir_BaseClick
+  end
+end
